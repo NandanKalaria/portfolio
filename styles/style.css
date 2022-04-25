@@ -159,6 +159,19 @@ body {
 	justify-content: center;
 }
 
+.greeting-text {
+	font-size: 4rem;
+}
+
+.name-text {
+	font-size: 5rem;
+}
+
+.hero-image {
+	width: 30rem;
+	height: auto;
+}
+
 .container p {
 	font-size: 3rem;
 	font-weight: normal;
@@ -167,7 +180,6 @@ body {
 }
 
 .container p span.typed-text {
-	font-size: 3rem;
 	font-weight: normal;
 	color: var(--text-pink);
 }
@@ -202,14 +214,6 @@ body {
 
 	100% {
 		background-color: #ccc;
-	}
-}
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
-
-	.flex-container {
-		flex-direction: column;
 	}
 }
 
@@ -372,13 +376,6 @@ img {
 	max-width: 100%;
 }
 
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
 @page {
 	margin: 1in;
 }
@@ -445,3 +442,45 @@ ol>li {
 }
 
 /* Notion CSS over */
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media screen and (max-width: 800px) {
+
+	.flex-container {
+		flex-direction: column;
+	}
+
+	.container p {
+		font-size: 1.8rem;
+		font-weight: normal;
+		color: var(--text-pink);
+		overflow: hidden;
+	}
+
+	.greeting-text {
+		font-size: 2.5rem;
+	}
+
+	.name-text {
+		font-size: 3.5rem;
+	}
+
+	.hero-image {
+		padding-top: 2.5rem;
+		width: 40rem;
+		height: auto;
+	}
+
+	.tabs .tabs--nav {
+		width: 100%;
+
+	}
+
+	.tabs .tabs--content {
+		padding: 20px;
+		box-shadow: 0.3rem 0rem 0.6rem var(--shadow-gray),
+			-0.2rem -0.2rem 0.5rem var(--shadow-white);
+		border-radius: 0 0 1rem 1rem;
+		background-color: var(--bg-gray);
+	}
+}
