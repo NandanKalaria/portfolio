@@ -39,7 +39,7 @@ body {
 }
 
 .tabs .tabs--nav span {
-	padding: 15px;
+	padding: 0.85rem;
 	display: block;
 	transition-delay: 0s;
 	transition-duration: 0.5s;
@@ -225,13 +225,25 @@ body {
 	justify-content: center;
 }
 
+.idea-text {
+	padding: 1rem;
+	font-size: 3rem;
+	color: var(--text-purple);
+}
+
+.connect-text {
+	padding: 1rem;
+	font-size: 3.25rem;
+	color: var(--text-pink);
+}
+
 .frame {
 	margin: 5rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 400px;
-	width: 300px;
+	height: 25rem;
+	width: 18rem;
 	position: relative;
 	box-shadow:
 		-7px -7px 20px 0px #fff9,
@@ -466,9 +478,14 @@ ol>li {
 	}
 
 	.hero-image {
-		padding-top: 2.5rem;
+		padding-top: 1.5rem;
 		width: 40rem;
 		height: auto;
+	}
+
+	.tabs {
+		margin-top: -2rem;
+		margin-bottom: 5rem;
 	}
 
 	.tabs .tabs--nav {
@@ -482,5 +499,9 @@ ol>li {
 			-0.2rem -0.2rem 0.5rem var(--shadow-white);
 		border-radius: 0 0 1rem 1rem;
 		background-color: var(--bg-gray);
+	}
+
+	.frame {
+		margin: 1rem;
 	}
 }
