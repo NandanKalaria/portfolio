@@ -262,7 +262,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex: 3;
+	flex-grow: 5;
 	width: 100%;
+}
+
+.img {
+	width: 80%;
 }
 
 .card-title {
